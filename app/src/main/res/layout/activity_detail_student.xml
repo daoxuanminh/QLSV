@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailStudent">
+
+    <TextView
+        android:id="@+id/text_head"
+        android:layout_width="337dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="70"
+        android:text="Detail student"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/input_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+
+        android:hint="Fullname"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/input_mssv"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/input_mssv"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+
+        android:hint="MSSV"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/text_head"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/birthday_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="Birthday"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/input_fullname"
+        app:layout_constraintTop_toBottomOf="@+id/input_fullname" />
+
+    <Button
+        android:id="@+id/birthday_btn"
+        android:layout_width="98dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:shadowColor="#131111"
+        android:shadowDx="1"
+        android:shadowDy="5"
+        android:text="Select"
+        app:layout_constraintStart_toEndOf="@+id/birthday_input"
+        app:layout_constraintTop_toTopOf="@+id/birthday_input" />
+
+    <AutoCompleteTextView
+        android:id="@+id/input_hometown"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="72dp"
+        android:hint="Address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/birthday_input" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="373dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="40dp"
+        android:text="Update student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_hometown" />
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="373dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="20dp"
+        android:text="Delete student"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_btn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

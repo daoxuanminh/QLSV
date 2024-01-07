@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="70"
+        android:gravity="left"
+        android:text="name: hello"
+        android:textSize="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_mssv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="70"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:text="MSSV: 20205119"
+        />
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="70"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="left"
+        android:text="email: hello2020@gmail.com"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:layout_below="@id/text_email"/>
+</LinearLayout>
